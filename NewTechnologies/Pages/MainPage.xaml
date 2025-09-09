@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:NewTechnologies"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainPage">
+      Title="MainPage" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -18,7 +18,7 @@
             <Button x:Name="btnAddRequest" Content="Добавить заявку" Click="btnAddRequest_Click"/>
         </StackPanel>
 
-        <ListView Grid.Row="1" Name="ListViewRequest" Margin="5">
+        <ListView Grid.Row="1" Name="ListViewRequest" MouseDoubleClick="ListViewRequest_MouseDoubleClick" d:ItemsSource="{d:SampleData ItemCount=1}" Margin="5">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
