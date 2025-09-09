@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="125c3a369ced498ba08bec923787b256" Name="Diagram1">
+        <EntityTypeShape EntityType="new_technologiesModel.material_type" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="new_technologiesModel.partner_type" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="new_technologiesModel.partners" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="new_technologiesModel.product_type" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="new_technologiesModel.products" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="new_technologiesModel.request_status" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="new_technologiesModel.requests" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="new_technologiesModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="new_technologiesModel.FK_partners_partner_type" ManuallyRouted="false" />
+        <AssociationConnector Association="new_technologiesModel.FK_requests_partners" ManuallyRouted="false" />
+        <AssociationConnector Association="new_technologiesModel.FK_products_product_type" ManuallyRouted="false" />
+        <AssociationConnector Association="new_technologiesModel.FK_requests_products" ManuallyRouted="false" />
+        <AssociationConnector Association="new_technologiesModel.FK_requests_request_status" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
