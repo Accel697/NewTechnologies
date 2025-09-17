@@ -44,10 +44,10 @@ namespace NewTechnologies.Services
         {
             var errors = new List<string>();
 
-            if (request.partner_request <= 0)
+            if (request.partner_request == 0)
                 errors.Add("Выберите партнера");
 
-            if (request.product_request <= 0)
+            if (request.product_request == 0)
                 errors.Add("Выберите продукт");
 
             if (request.quantity_request <= 0)

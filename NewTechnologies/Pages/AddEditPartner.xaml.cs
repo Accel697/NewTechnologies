@@ -52,7 +52,7 @@ namespace NewTechnologies.Pages
             var validator = new Validator();
             var (isPartnerValid, partnerErrors) = new Validator().PartnerValidate(_partner);
 
-            if (!isPartnerValid)
+            if (!isPartnerValid) // валидация информации о партнере
             {
                 MessageBox.Show(string.Join("\n", partnerErrors), "Ошибки валидации", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;

@@ -56,6 +56,11 @@ namespace NewTechnologies
             }
         }
 
+        /// <summary>
+        /// функция для отображения изменений на странице
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             var context = new_technologiesEntities.GetContext();

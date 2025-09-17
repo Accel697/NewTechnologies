@@ -17,11 +17,11 @@
 
         <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Партнер:"/>
-            <ComboBox Name="cbPartner"/>
+            <ComboBox Name="cbPartner" SelectedValue="{Binding partner_request}"/>
             <TextBlock Text="Продукт:"/>
-            <ComboBox Name="cbProduct"/>
+            <ComboBox Name="cbProduct" SelectedValue="{Binding product_request}"/>
             <TextBlock Text="Количество:"/>
-            <TextBox Name="tbQuantity"/>
+            <TextBox Name="tbQuantity" Text="{Binding quantity_request}"/>
             <Button x:Name="btnSave" Content="Сохранить" Click="btnSave_Click"/>
         </StackPanel>
     </Grid>

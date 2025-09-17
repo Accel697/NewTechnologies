@@ -41,8 +41,10 @@ namespace NewTechnologies.Pages
 
             var products = context.products.ToList();
             cbProduct.ItemsSource = products;
-            cbProduct.SelectedValuePath = "id_product";
+            cbProduct.SelectedValuePath = "article_product";
             cbProduct.DisplayMemberPath = "title_product";
+
+            DataContext = _request;
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -52,7 +54,7 @@ namespace NewTechnologies.Pages
             var validator = new Validator();
             var (isRequestValid, requestErrors) = new Validator().RequestValidator(_request);
 
-            if (!isRequestValid)
+            if (!isRequestValid) // валидация информации о заявке
             {
                 MessageBox.Show(string.Join("\n", requestErrors), "Ошибки валидации", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
